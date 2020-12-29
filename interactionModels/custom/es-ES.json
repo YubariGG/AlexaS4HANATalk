@@ -1,0 +1,58 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "información comercial sobre la compañía",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "getTotalProposalsIntent",
+          "slots": [],
+          "samples": [
+            "sumatorio",
+            "sumatorio de ofertas",
+            "total",
+            "cuenta el número de ofertas",
+            "total de ofertas",
+            "recuento"
+          ]
+        },
+        {
+          "name": "getLastProposalIntent",
+          "slots": [],
+          "samples": [
+            "más reciente",
+            "la última",
+            "última oferta"
+          ]
+        },
+        {
+          "name": "getLastAdjudicationIntent",
+          "slots": [],
+          "samples": [
+            "oferta ganada",
+            "última ganada",
+            "ganada",
+            "la última adjudicación"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "9"
+}

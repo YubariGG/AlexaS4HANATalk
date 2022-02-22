@@ -13,10 +13,10 @@ const mensajeError = 'Perdona, no he podido hacer eso que me has pedido. Pruéba
 const mensajeAyuda = 'You can say hello to me! How can I help?';
 //Este  mensaje se lanza cuando no hay ningun intent (forma de interactuar del usuario que lanza una acción) que responda a lo que se ha dicho
 const ningunIntentEncontrado = 'Perdona, eso lo desconozco. Prueba a preguntar otra cosa...'; 
-const URL = "sapqas.idom.com:443"
+const URL = "host:port"
 var optionsGet = {
-    "usuario" : "JAIMEHERNA00",
-    "contraseña": "RZ7Zgknd.-",
+    "usuario" : "S4HANAUSER",
+    "contraseña": "S4HANAPW",
     "x-csrf-token": "fetch",
     "Content-Type": "application/json",
     "type": "GET",
@@ -157,7 +157,7 @@ const getHttpUltima = function(url, options) {
 };
 
 //Query de la última oferta que se ha adjudicado
-//https://erp.idom.com/sap/opu/odata/sap/Z_ODATA_CDS_WPARTNER_SRV/ZCDS_PROP_PARTNERNAMES?$top=1&$orderby=Lastchangedon desc&$filter=Status eq 'AW'
+//https://host:port/sap/opu/odata/sap/Z_ODATA_CDS_WPARTNER_SRV/ZCDS_PROP_PARTNERNAMES?$top=1&$orderby=Lastchangedon desc&$filter=Status eq 'AW'
 const getLastAdjudicationIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
